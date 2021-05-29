@@ -1,12 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+  <link rel="stylesheet" href="./index.css">
 </head>
+
 <body>
-    <h1>Welcome to Online Chat App!</h1>
+
+
+  <div class="form">
+    <h2>Login</h2>
+    <form action="/index.html">
+      <div class="imgcontainer">
+        <img src="./image/img_avatar.png" alt="Avatar" class="avatar">
+      </div>
+      <label for="fname">Email</label><br>
+      <input class="input" type="text" id="email" name="fname" value=""><br>
+      <br>
+      <label for="lname">Password</label><br>
+      <input class="input" type="password" id="password" name="lname" value=""><br><br>
+      <input class="button" type="button" onclick="login()" value="Login">
+    </form>
+    <br>
+    <input class="button" type="button" onclick="location.href='./html/register.html';" value="Create Account"><br>
+    <br>
+
+  </div>
+
+  <script src="./script/properties.js"></script>
+  <script src=" ./script/utils.js "></script>
+  <script src="./script/auth.js"></script>
+
 </body>
+
 </html>
