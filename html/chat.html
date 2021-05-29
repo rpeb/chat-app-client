@@ -2,28 +2,38 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chat</title>
-    <link rel="stylesheet" href="../css/chat.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="refresh" content="10">
+  <title>Chat</title>
+  <link rel="stylesheet" href="../css/chat.css">
 </head>
 
 <body>
 
-    <div class="app">
+  <div class="app">
 
-        <div class="app__body">
+    <div class="app__body">
 
-            <div class="sidebar">
+      <div class="sidebar">
 
-                <div class="sidebar__header">
-                    <img src="../image/img_avatar.png" alt="avtar" class="avatar">
-                    <button class="button" style="vertical-align:middle"><span id="loggedInUserName"></span>
+        <div class="sidebar__header">
+          <img src="../image/img_avatar.png" alt="avatar" class="avatar">
+          <a href="profile.html">
+            <button class="button" style="vertical-align:middle"><span id="sidebar-name"></span>
+          </a>
         </div>
 
+        <!-- <div class="sidebar__search">
+          <div class="sidebar__searchContainer">
+            <img src="../image/search.png" alt="search" class="search">
+            <input placeholder="Search" type="search">
+          </div>
+        </div> -->
+
         <div class="sidebar__friend-list">
-            <!-- chat.js -->
+
         </div>
       </div>
 
@@ -31,37 +41,83 @@
 
       <div class="chat">
 
-        <!-- <div class="chat__header">
+        <div class="chat__header">
           <img src="../image/img_avatar.png" alt="avatar" class="avatar">
           <div class="chat__header-info">
+            <h3 id="friend-name">B</h3>
+            <!-- <p>Chat info</p> -->
           </div>
-        </div> -->
-
-
-        <!-- <div class="chat__body" id="chatBody">
-            <h2>Start a conversation...</h2>
-        </div> -->
-
-        <div id="message_reply_option" hidden>
-            Reply
         </div>
 
-        <!-- <div class="chat__footer">
-          <form>
-            <input type="text" placeholder="Type a message">
-            <button  class="send__button"><img src="../image/send.png" alt="send"></button>
-                    <!-- <img src="../image/send.png" alt="snenf" class="send__button"> -->
-                    </form>
-                </div>
 
-            </div>
+        <div class="chat__body">
+
+          <div class="message">
+            <p class="message__body">
+              <span class="message__sender-name">User 1</span>
+              Hi
+            </p>
+            <span class="message__timestamp">6:00 pm</span>
+            <span class="message__dropdown" hidden><img src="../image/dropdown_arrow.png" alt="arrow"
+                class="dropdown-arrow"></span>
+          </div>
+
+          <div class="message message__receiver">
+            <p class="message__body">
+              <span class="message__sender-name">User 2</span>
+              Hello
+            </p>
+            <span class="message__timestamp">6:01 pm</span>
+            <span class="message__dropdown" hidden><img src="../image/dropdown_arrow.png" alt="arrow"
+                class="dropdown-arrow"></span>
+          </div>
+
+          <div class="message">
+            <p class="message__body">
+              <span class="message__sender-name">User 1</span>
+              How are you
+            </p>
+            <span class="message__timestamp">6:02 pm</span>
+            <span class="message__dropdown" hidden><img src="../image/dropdown_arrow.png" alt="arrow"
+                class="dropdown-arrow"></span>
+          </div>
+
+          <div class="message message__receiver">
+            <p class="message__body">
+              <span class="message__sender-name">User 2</span>
+              I am great. Heard you are back in town! How have you been?
+            </p>
+            <span class="message__timestamp">6:03 pm</span>
+            <span class="message__dropdown" hidden><img src="../image/dropdown_arrow.png" alt="arrow"
+                class="dropdown-arrow"></span>
+          </div>
+        </div>
+
+        <div id="message_reply_option" hidden>
+          Reply
+        </div>
+
+        <div class="chat__footer">
+          <form id="messageSubmit">
+            <input id="messageBody" type="text" placeholder="Type a message">
+            <button class="send__button" onclick="sendMessage('${conversationId}', event)"><img src="../image/send.png"
+                alt="send"></button>
+          </form>
+        </div>
+
+      </div>
 
 
-        </div> -->
     </div>
-    </div>
-    <script src="../script/util.js"></script>
-    <script src=" ../script/chat.js "></script>
+  </div>
+  </div>
+
+
+  <script src=" ../script/redirect.js "></script>
+  <script src="../script/properties.js"></script>
+  <script src="../script/utils.js"></script>
+  <script src="../script/sidebar.js"></script>
+  <script src=" ../script/chat.js "></script>
 </body>
 
 </html>

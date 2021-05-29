@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D.O.B.</title>
+  <link rel="stylesheet" href="../css/put-dob.css">
+</head>
+
+<body>
+
+  <div class="app">
+
+    <div class="app__body">
+
+      <div class="sidebar">
+
+        <div class="sidebar__header">
+          <img src="../image/img_avatar.png" alt="avatar" class="avatar">
+          <a href="profile.html">
+            <button class="button" style="vertical-align:middle"><span id="sidebar-name"></span>
+          </a>
+        </div>
+
+        <!-- <div class="sidebar__search">
+          <div class="sidebar__searchContainer">
+            <img src="../image/search.png" alt="search" class="search">
+            <input placeholder="Search" type="search">
+          </div>
+        </div> -->
+
+        <div class="sidebar__friend-list">
+
+        </div>
+      </div>
+
+      <div class="dob">
+        <div class="dob__header">
+          <h1>Change D.O.B.</h1>
+        </div>
+        <div class="dob__body">
+          <img src="../image/avatar6.png" alt="avatar" class="avatar">
+          <div id="dob__body_dob">
+            <form onsubmit="return false" class="dob__body__form-element-container__form-element">
+              <input type="date" id="new-dob" placeholder="New Date of Birth">
+              <button onclick="fnUpdateDobHandler()" type="submit">Change dob</button>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <script src="../script/redirect.js"></script>
+  <script src="../script/put-request.js"></script>
+  <script src="../script/properties.js"></script>
+  <script src=" ../script/utils.js "></script>
+  <script src="../script/profile.js"></script>
+  <script src="../script/sidebar.js"></script>
+</body>
+
+</html>

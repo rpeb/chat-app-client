@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email</title>
+  <link rel="stylesheet" href="../css/put-email.css">
+</head>
+
+<body>
+
+  <div class="app">
+
+    <div class="app__body">
+
+      <div class="sidebar">
+
+        <div class="sidebar__header">
+          <img src="../image/img_avatar.png" alt="avatar" class="avatar">
+          <a href="profile.html">
+            <button class="button" style="vertical-align:middle"><span id="sidebar-name"></span>
+          </a>
+        </div>
+
+        <!-- <div class="sidebar__search">
+          <div class="sidebar__searchContainer">
+            <img src="../image/search.png" alt="search" class="search">
+            <input placeholder="Search" type="search">
+          </div>
+        </div> -->
+
+        <div class="sidebar__friend-list">
+
+        </div>
+      </div>
+
+      <div class="email">
+        <div class="email__header">
+          <h1>Change Email</h1>
+        </div>
+        <div class="email__body">
+          <img src="../image/avatar6.png" alt="avatar" class="avatar">
+          <div id="email__body_email">
+            <form onsubmit="return false" class="email__body__form-element-container__form-element">
+              <input type="email" id="new-email" placeholder="New Email">
+              <input type="email" id="confirm-new-email" placeholder="Confirm email" />
+              <button onclick="fnUpdateEmailHandler()" type="submit">Change email</button>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../script/redirect.js"></script>
+  <script src="../script/put-request.js"></script>
+  <script src="../script/properties.js"></script>
+  <script src=" ../script/utils.js "></script>
+  <script src="../script/profile.js"></script>
+  <script src="../script/sidebar.js"></script>
+</body>
+
+</html>

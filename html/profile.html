@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+  <link rel="stylesheet" href="../css/profile.css">
+</head>
+
+<body>
+
+  <div class="app">
+
+    <div class="app__body">
+
+      <div class="sidebar">
+
+        <div class="sidebar__header">
+          <img src="../image/img_avatar.png" alt="avatar" class="avatar">
+          <button class="button"><span id="sidebar-name"></span>
+        </div>
+
+        <!-- <div class="sidebar__search">
+          <div class="sidebar__searchContainer">
+            <img src="../image/search.png" alt="search" class="search">
+            <input placeholder="Search" type="search">
+          </div>
+        </div> -->
+
+        <div class="sidebar__friend-list">
+
+        </div>
+      </div>
+
+      <div class="profile">
+        <div class="profile__header">
+          <h1>Profile</h1>
+        </div>
+        <div class="profile__body">
+          <img src="../image/avatar6.png" alt="avatar" class="avatar">
+          <div class="profile__body-info">
+            <h3 class="profile__body-info__user-data"><span id="name"></span></h3>
+            <a class="profile__body-info__user-data__change-button" href="put-name.html">
+              <button>Change</button>
+            </a>
+          </div>
+          <div class="profile__body-info">
+            <h3 class="profile__body-info__user-data"><span id="email"></span></h3>
+            <a class="profile__body-info__user-data__change-button" href="put-email.html">
+              <button>Change</button>
+            </a>
+
+          </div>
+
+          <div class="profile__body-info">
+            <h3 class="profile__body-info__user-data"><span id="dob"></span></h3>
+            <a href="put-dob.html" class="profile__body-info__user-data__change-button">
+              <button>Change</button>
+            </a>
+          </div>
+
+          <div class="profile__body-info">
+            <h3 class="profile__body-info__user-data">**********</h3>
+            <a href="post-password.html" class="profile__body-info__user-data__change-button">
+              <button>Change</button>
+            </a>
+          </div>
+
+          <div class="profile__body-info">
+            <a href="../index.html" class="profile__body-info__user-data__change-button" onclick="logout()">
+              <button>Logout</button>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <script src="../script/logout.js"></script>
+  <script src="../script/redirect.js"></script>
+  <script src="../script/properties.js"></script>
+  <script src="../script/utils.js"></script>
+  <script src="../script/sidebar.js"></script>
+  <script src="../script/user-profile.js"></script>
+</body>
+
+</html>
