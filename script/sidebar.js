@@ -16,10 +16,10 @@ const fnSidebarFriendList = () => {
   fetch(baseURL + "users")
     .then((res) => res.json())
     .then((res) => {
-      console.log("arrsadfjhgsa", res);
+      // console.log("arrsadfjhgsa", res);
       res = res.filter(item => getUserId() !== item.userId);
       allUsers = res
-      console.log(res);
+      // console.log(res);
       localStorage.setItem("allUserStorage", JSON.stringify(allUsers));
       for (var i = 0; i < res.length; i++) {
         document.querySelector(".sidebar__friend-list").insertAdjacentHTML(

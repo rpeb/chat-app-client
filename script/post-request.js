@@ -22,9 +22,6 @@ const postRequest = async () => {
 }
 
 const requestStyle = () => {
-
-  // setTimeout(() => console.log(JSON.parse(localStorage.getItem("allUserStorage"))), 2000)
-  console.log(arr[1]);
   let user = JSON.parse(localStorage.getItem("allUserStorage"))[arr[1]]
   replaceInnerHTMLById("chat__name", user.name)
   replaceInnerHTMLById("chat__info", user.email)
